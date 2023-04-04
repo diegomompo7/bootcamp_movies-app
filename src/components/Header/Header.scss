@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+@import "../../styles/media-queries.scss";
+
+.header {
+  display: flex;
+  max-width: 1440px;
+  height: 111px;
+  justify-content: space-between;
+  background-color: $second-color;
+  @include for-tablet-portrait-up {
+    height: 61px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @include for-tablet-portrait-up {
+      flex-direction: row;
+    }
+  }
+  &__items {
+    @include for-tablet-portrait-up {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    &--link {
+      margin-left: 20px;
+      color: $first-color;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  &__lang{
+    text-align: end;
+    margin-top: 22px;
+  }
+}
