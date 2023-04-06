@@ -13,7 +13,7 @@ const Header = () => {
       <div className="header__nav">
         <Image width="162px" objectFit="cover" src={header_logo} alt="Header Logo" ml="20px" mt="22px" mb="18px" />
         <div className="header__items">
-          <Link className="header__items--link" to="">
+          <Link className="header__items--link" to="/">
             <FormattedMessage id="header:films"></FormattedMessage>
           </Link>
           <Link className="header__items--link" to="">

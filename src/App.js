@@ -1,4 +1,4 @@
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import { IntlProvider } from "react-intl";
@@ -6,6 +6,7 @@ import { createContext, useEffect, useState } from "react";
 import English from "./lang/en.json";
 import Spanish from "./lang/es.json";
 import Footer from "./components/Footer/Footer";
+import HomePage from "./pages/HomePage/HomePage";
 
 export const LanguageSelector = createContext();
 
@@ -29,6 +30,9 @@ function App() {
         <IntlProvider messages={messages} locale={locale}>
           <HashRouter>
             <Header></Header>
+            <Routes>
+              <Route path="/" element={<HomePage></HomePage>}>{" "}</Route>
+            </Routes>
             <Footer></Footer>
           </HashRouter>
         </IntlProvider>
