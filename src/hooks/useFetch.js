@@ -1,20 +1,18 @@
 import { useEffect, useState } from "react";
 
 const useFecth = (apiUrl) => {
-  console.log(apiUrl)
-  const [result, setResult] = useState(null)
+    console.log(apiUrl);
+    const [result, setResult] = useState(null);
 
+    useEffect(() => {
+      if (apiUrl) {
+        fetch(apiUrl)
+          .then((data) => data.json())
+          .then((dataParsed) => setResult(dataParsed));
+      }
+    }, [apiUrl]);
 
-  useEffect(() => {
-    if (apiUrl) {
-      fetch(apiUrl)
-        .then((data) => data.json())
-        .then((dataParsed) => console.log(dataParsed))
-    }
-  }, [])
+    return [result];
+};
 
-
-  return [result]
-}
-
-export default useFecth
+export default useFecth;
