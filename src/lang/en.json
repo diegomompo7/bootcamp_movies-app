@@ -1,4 +1,19 @@
 {
     "header:films": "Films",
-    "header:quiz": "Quiz"
+    "header:quiz": "Quiz",
+    "home:bienvenido": "Welcome.",
+    "home:descripcion": "Millons of films, TV programs and persons to discover. Discover now.",
+    "home:tendencias": "Trends",
+    "home:hoy": "Today",
+    "home:estaSemana": "This week",
+    "home:avances": "Last advances",
+    "home:youtube": "See on Youtube",
+    "home:trailer": "Official Trailer",
+    "home:popular": "The most of popular",
+    "home:peliculas": "Movies",
+    "home:television": "Television",
+    "home:unete" : "Join up today.",
+    "home:descripcion_unete": "Get access to maintain your own custom personal lists, track what you've seen and search and filter for what to watch next—regardless if it's in theatres, on TV or available on popular streaming services like Netflix, Amazon Prime Video, Disney Plus, fuboTV y Apple TV Plus.",
+    "home:gratis": "Free Watch",
+    "home:mas": "+MORE"
 }
