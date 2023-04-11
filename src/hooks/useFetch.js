@@ -12,6 +12,7 @@ const useFecth = (apiUrl) => {
       }
     }, [apiUrl]);
 
+    console.log(result)
     return [result];
 };
 

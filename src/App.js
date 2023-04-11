@@ -7,6 +7,7 @@ import English from "./lang/en.json";
 import Spanish from "./lang/es.json";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
+import DetailPage from "./pages/DetailPage/DetailPage";
 
 export const LanguageSelector = createContext();
 
@@ -32,6 +33,8 @@ function App() {
             <Header></Header>
             <Routes>
               <Route path="/" element={<HomePage></HomePage>}>{" "}</Route>
+              <Route path="/movie/:detailId" element={<DetailPage></DetailPage>}>{" "}</Route>
+              <Route path="/tv/:detailId" element={<DetailPage></DetailPage>}>{" "}</Route>
             </Routes>
             <Footer></Footer>
           </HashRouter>
