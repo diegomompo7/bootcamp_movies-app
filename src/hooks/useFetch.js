@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const useFecth = (apiUrl) => {
     console.log(apiUrl);
-    const [result, setResult] = useState(null);
+    const [result, setResult] = useState([]);
 
     useEffect(() => {
       if (apiUrl) {
