@@ -65,7 +65,7 @@ const Films = ({ textTitle, textHoy, textEstaSemana, printFilms, linkFirst, link
                   </NavLink>
                 )}
                 <Circle bg="#052641" w="40px" h="40px" color="white">
-                  {film.vote_average}
+                  {Math.trunc(film.popularity/100)}%
                 </Circle>
                 <Text w="80%" fontSize="12px" fontWeight="bold">
                   {film.title}

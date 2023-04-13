@@ -1,4 +1,5 @@
 {
+    "lang:api" : "&language=en-US",
     "header:films": "Films",
     "header:quiz": "Quiz",
     "home:bienvenido": "Welcome.",
@@ -15,5 +16,8 @@
     "home:unete" : "Join up today.",
     "home:descripcion_unete": "Get access to maintain your own custom personal lists, track what you've seen and search and filter for what to watch next—regardless if it's in theatres, on TV or available on popular streaming services like Netflix, Amazon Prime Video, Disney Plus, fuboTV y Apple TV Plus.",
     "home:gratis": "Free Watch",
-    "home:mas": "+MORE"
+    "home:mas": "+MORE",
+    "detail:rating": "User rating",
+    "detail:overview": "Overview",
+    "detail:characters" : "Principal characters"
 }
