@@ -19,5 +19,6 @@
     "home:mas": "+MORE",
     "detail:rating": "User rating",
     "detail:overview": "Overview",
-    "detail:characters" : "Principal characters"
+    "detail:characters" : "Principal characters",
+    "detail:recomendations" : "Recomendations"
 }

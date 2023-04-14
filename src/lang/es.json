@@ -19,5 +19,6 @@
     "home:mas": "+MÁS",
     "detail:rating": "Puntuación de usuario",
     "detail:overview": "Vista general",
-    "detail:characters" : "Reparto principal"
+    "detail:characters" : "Reparto principal",
+    "detail:recomendations" : "Recomendaciones"
 }

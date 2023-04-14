@@ -16,7 +16,7 @@ const Header = () => {
           <Link className="header__items--link" to="/">
             <FormattedMessage id="header:films"></FormattedMessage>
           </Link>
-          <Link className="header__items--link" to="">
+          <Link className="header__items--link" to="/quiz">
             <FormattedMessage id="header:quiz"></FormattedMessage>
           </Link>
         </div>

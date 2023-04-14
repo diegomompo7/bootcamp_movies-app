@@ -1,4 +1,4 @@
-import useFetch from "../../hooks/useFetch";
+import useFetch  from "../../hooks/useFetch";
 import { usePagination } from "../../hooks/usePagination";
 import { Box, Text, Link, Image, Button } from "@chakra-ui/react";
 import film_backgroundFirst from "../../assets/film-backgroundFirst.png";
@@ -13,6 +13,7 @@ const API_URL = `${process.env.REACT_APP_API_URL}`;
 const API_KEY = `${process.env.REACT_APP_API_KEY}`;
 
 const HomePage = () => {
+  //HomePage
   const [chooseFilm, setChooseFilm] = React.useState(null);
   const [filmsData] = useFetch(API_URL + chooseFilm + API_KEY);
   const [firstFilms, showMoreFilms, theAreMoreFilms] = usePagination(filmsData?.results);
@@ -72,7 +73,7 @@ const HomePage = () => {
             );
           })}
           {theAreMoreDisocver && (
-            <Button borderRadius="50px" bg="white" color="#052641" fontSize="14px" h="30px" w="103px"   mt="48px" onClick={showMoreDiscover}>
+            <Button borderRadius="50px" bg="white" color="#052641" fontSize="14px" h="30px" w="103px" mt="48px" onClick={showMoreDiscover}>
               <FormattedMessage id="home:mas"></FormattedMessage>
             </Button>
           )}
@@ -80,7 +81,7 @@ const HomePage = () => {
       </Box>
 
       <Films textTitle={<FormattedMessage id="home:popular"></FormattedMessage>} textHoy={<FormattedMessage id="home:peliculas"></FormattedMessage>} textEstaSemana={<FormattedMessage id="home:television"></FormattedMessage>} linkFirst="movie/popular?api_key=" linkSecond="tv/popular?api_key=" setChoose={setChoosePopular} printFilms={firstPopular} moreText={<FormattedMessage id="home:mas"></FormattedMessage>} theAreMore={theAreMorePopular} showMore={showMorePopular}></Films>
-      
+
       <Box bgImage={film_backgroundSecond} w="100%" maxW="1440px" bgPosition="center" p={4} color="white">
         <Text fontWeight="bold" fontSize="32px" textAlign="justify" pl="32px" fontFamily="Poppins">
           <FormattedMessage id="home:unete"></FormattedMessage>
@@ -89,7 +90,7 @@ const HomePage = () => {
           <FormattedMessage id="home:descripcion_unete"></FormattedMessage>
         </Text>
       </Box>
-      
+
       <Films
         textTitle={<FormattedMessage id="home:gratis"></FormattedMessage>}
         textHoy={<FormattedMessage id="home:peliculas"></FormattedMessage>}
